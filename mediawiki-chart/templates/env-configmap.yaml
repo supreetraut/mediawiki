@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  MYSQL_DATABASE: wikidatabase
+kind: ConfigMap
+metadata:
+  labels:
+    service: db-env
+  name: env

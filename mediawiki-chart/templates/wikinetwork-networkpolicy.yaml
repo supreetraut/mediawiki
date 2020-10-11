@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: NetworkPolicy
+metadata:
+  name: wikinetwork
+spec:
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          network/wikinetwork: "true"
+  podSelector:
+    matchLabels:
+      network/wikinetwork: "true"

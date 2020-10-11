@@ -1,0 +1,8 @@
+name: mediawiki-chart
+description: Helm Chart for deploying Mediawiki v1.34
+version: 0.0.1
+apiVersion: v1
+keywords:
+  - mediawiki-chart
+sources:
+home:
