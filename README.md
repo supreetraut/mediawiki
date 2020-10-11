@@ -35,3 +35,10 @@ After the DB connections are setup, provide details for setting up your new Wiki
 
 After final submission you it will generate a LocalSettings.php file which needs to be copied on the mediawiki container at location: `/opt/rh/httpd24/root/var/www/html/mediawiki`. The Mediawiki deployment needs to be modified to change this directory location as a mount point from localhost or a S3 bucket.
 
+# Helm Chart
+
+Install the Helm chart using command: 
+
+```bash
+helm install mediawiki ./mediawiki-chart
+```
